@@ -5,7 +5,7 @@ from PIL import Image
 from io import BytesIO
 
 # Koneksi ke MongoDB Atlas
-MONGO_URI = "your-mongodb-url"  # Ganti dengan URI MongoDB Anda
+MONGO_URI = "mongodb+srv://mono:R08SLgsI7AW2rfkE@innovatrix.9m9bpe9.mongodb.net/?retryWrites=true&w=majority&appName=Innovatrix"  # Ganti dengan URI MongoDB Anda
 client = MongoClient(MONGO_URI)
 db = client["esp32cam_db"]
 fs = gridfs.GridFS(db)
