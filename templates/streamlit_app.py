@@ -14,11 +14,8 @@ fs = gridfs.GridFS(db)
 # Fungsi untuk mengupload foto ke MongoDB
 def upload_photo():
     try:
-        if not st.file_uploader("Pilih foto untuk diupload", type=["jpg", "jpeg", "png"]):
-            st.warning("Tidak ada file yang dipilih")
-            return
-
-        photo_file = st.file_uploader("Pilih foto", type=["jpg", "jpeg", "png"])
+        # Mengupload foto
+        photo_file = st.file_uploader("Pilih foto untuk diupload", type=["jpg", "jpeg", "png"])
 
         if photo_file is not None:
             # Baca foto dan simpan ke MongoDB GridFS
@@ -43,7 +40,7 @@ def load_photos():
 # Fungsi untuk menampilkan galeri foto
 def display_gallery():
     photos = load_photos()
-    
+
     if not photos:
         st.write("Tidak ada foto yang tersedia.")
         return
@@ -67,6 +64,7 @@ def display_gallery():
         except Exception as e:
             st.error(f"Terjadi kesalahan saat menampilkan foto: {e}")
 
+# Fungsi utama aplikasi Streamlit
 def main():
     st.sidebar.title("Pilihan")
     option = st.sidebar.selectbox("Pilih aksi", ("Upload Foto", "Lihat Galeri"))
