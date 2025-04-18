@@ -1,4 +1,9 @@
 # WildVision: Deteksi Gerakan dengan ESP32-CAM 🚶‍♂️📸
+![RANGKAIAN](https://github.com/user-attachments/assets/48ba8d87-14a1-4cc7-b2a1-6c1826213749)
+
+
+## Prototype Hardware untuk kedepannya!
+![HARDWARE WILDVISION](https://github.com/user-attachments/assets/f6956ed9-dfae-4120-970b-5679f3911d36)
 
 Selamat datang di **WildVision**! 🌟 Proyek ini menggunakan **ESP32-CAM** untuk menangkap foto ketika ada gerakan terdeteksi oleh sensor PIR. Foto yang diambil akan dikirimkan ke server melalui WiFi. Mari kita lihat bagaimana cara kerjanya! 🔥
 
