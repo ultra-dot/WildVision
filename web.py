@@ -7,7 +7,7 @@ from bson import ObjectId
 app = Flask(__name__)
 
 # Koneksi ke MongoDB Atlas
-MONGO_URI = "mongodb+srv://mono:R08SLgsI7AW2rfkE@innovatrix.9m9bpe9.mongodb.net/?retryWrites=true&w=majority&appName=Innovatrix"
+MONGO_URI = "your-mongodb-url"
 
 client = MongoClient(MONGO_URI)
 db = client["esp32cam_db"]
