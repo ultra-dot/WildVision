@@ -1,5 +1,6 @@
 # WildVision: Deteksi Gerakan dengan ESP32-CAM 🚶‍♂️📸
-![RANGKAIAN](https://github.com/user-attachments/assets/48ba8d87-14a1-4cc7-b2a1-6c1826213749)
+![RANGKAIAN](https://github.com/user-attachments/assets/c5d26dc3-250e-4bcf-89cc-b6228d6ea0f0)
+
 
 
 ## Prototype Hardware untuk kedepannya!
